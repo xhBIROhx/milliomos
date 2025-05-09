@@ -1,0 +1,15 @@
+/home/essuren/Desktop/School/c#/milliomos/bin/Debug/net9.0/milliomos
+/home/essuren/Desktop/School/c#/milliomos/bin/Debug/net9.0/milliomos.deps.json
+/home/essuren/Desktop/School/c#/milliomos/bin/Debug/net9.0/milliomos.runtimeconfig.json
+/home/essuren/Desktop/School/c#/milliomos/bin/Debug/net9.0/milliomos.dll
+/home/essuren/Desktop/School/c#/milliomos/bin/Debug/net9.0/milliomos.pdb
+/home/essuren/Desktop/School/c#/milliomos/obj/Debug/net9.0/milliomos.GeneratedMSBuildEditorConfig.editorconfig
+/home/essuren/Desktop/School/c#/milliomos/obj/Debug/net9.0/milliomos.AssemblyInfoInputs.cache
+/home/essuren/Desktop/School/c#/milliomos/obj/Debug/net9.0/milliomos.AssemblyInfo.cs
+/home/essuren/Desktop/School/c#/milliomos/obj/Debug/net9.0/milliomos.csproj.CoreCompileInputs.cache
+/home/essuren/Desktop/School/c#/milliomos/obj/Debug/net9.0/milliomos.sourcelink.json
+/home/essuren/Desktop/School/c#/milliomos/obj/Debug/net9.0/milliomos.dll
+/home/essuren/Desktop/School/c#/milliomos/obj/Debug/net9.0/refint/milliomos.dll
+/home/essuren/Desktop/School/c#/milliomos/obj/Debug/net9.0/milliomos.pdb
+/home/essuren/Desktop/School/c#/milliomos/obj/Debug/net9.0/milliomos.genruntimeconfig.cache
+/home/essuren/Desktop/School/c#/milliomos/obj/Debug/net9.0/ref/milliomos.dll
