@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "t9kvThlfEFc=",
+  "success": true,
+  "projectFilePath": "/home/essuren/Desktop/School/c#/milliomos/milliomos.csproj",
+  "expectedPackageFiles": [
+    "/home/essuren/.nuget/packages/microsoft.aspnetcore.app.ref/9.0.2/microsoft.aspnetcore.app.ref.9.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
