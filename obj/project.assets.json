@@ -8,19 +8,19 @@
     "net9.0": []
   },
   "packageFolders": {
-    "/home/essuren/.nuget/packages/": {}
+    "/home/xhbirohx/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/essuren/Desktop/School/c#/milliomos/milliomos.csproj",
+      "projectUniqueName": "/home/xhbirohx/Desktop/huh/milliomos/milliomos.csproj",
       "projectName": "milliomos",
-      "projectPath": "/home/essuren/Desktop/School/c#/milliomos/milliomos.csproj",
-      "packagesPath": "/home/essuren/.nuget/packages/",
-      "outputPath": "/home/essuren/Desktop/School/c#/milliomos/obj/",
+      "projectPath": "/home/xhbirohx/Desktop/huh/milliomos/milliomos.csproj",
+      "packagesPath": "/home/xhbirohx/.nuget/packages/",
+      "outputPath": "/home/xhbirohx/Desktop/huh/milliomos/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/essuren/.nuget/NuGet/NuGet.Config"
+        "/home/xhbirohx/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
@@ -63,7 +63,7 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[9.0.2, 9.0.2]"
+            "version": "[9.0.4, 9.0.4]"
           }
         ],
         "frameworkReferences": {
@@ -71,7 +71,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.103/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.105/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
