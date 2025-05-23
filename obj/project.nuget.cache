@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "LB/V/MQuSJs=",
+  "dgSpecHash": "t9kvThlfEFc=",
   "success": true,
-  "projectFilePath": "/home/xhbirohx/Desktop/huh/milliomos/milliomos.csproj",
+  "projectFilePath": "/home/essuren/Desktop/School/c#/milliomos/milliomos.csproj",
   "expectedPackageFiles": [
-    "/home/xhbirohx/.nuget/packages/microsoft.aspnetcore.app.ref/9.0.4/microsoft.aspnetcore.app.ref.9.0.4.nupkg.sha512"
+    "/home/essuren/.nuget/packages/microsoft.aspnetcore.app.ref/9.0.2/microsoft.aspnetcore.app.ref.9.0.2.nupkg.sha512"
   ],
   "logs": []
 }
