@@ -45,7 +45,6 @@ namespace MyApp
                 if (!kerdes(i)) { break; }
             }
 
-            Console.Clear();
             System.Console.WriteLine("A játék véget ért. " + guarantee + " Ft-ot nyertél.");
         }
 
@@ -82,9 +81,9 @@ namespace MyApp
             }
             Kerdes kerdes = kerdesek[random.Next(kerdesek.Count)];
 
-            Console.WriteLine(kerdes.KerdesSzoveg +"\na.) "+ kerdes.Valaszok[0] +"\nb.) "+ kerdes.Valaszok[1] +"\nc.) "+ kerdes.Valaszok[2] +"\nd.) "+ kerdes.Valaszok[3]);
+            Console.WriteLine(kerdes.KerdesSzoveg +"\nA.) "+ kerdes.Valaszok[0] +"\nB.) "+ kerdes.Valaszok[1] +"\nC.) "+ kerdes.Valaszok[2] +"\nD.) "+ kerdes.Valaszok[3]);
             if (segitsegek.Count != 0) {
-                System.Console.WriteLine("s.) Segítség");
+                System.Console.WriteLine("S.) Segítség");
             }
             System.Console.Write("Válaszod: ");
             //Console.Write(kerdes.HelyesValaszKod); //TODO
@@ -110,10 +109,10 @@ namespace MyApp
                             helytelen = random.Next(4);
                         }
                         if (helyes < helytelen) {
-                            Console.WriteLine("a.) "+kerdes.Valaszok[helyes]+ "\nb.) "+ kerdes.Valaszok[helytelen]);
+                            Console.WriteLine("A.) "+kerdes.Valaszok[helyes]+ "\nB.) "+ kerdes.Valaszok[helytelen]);
                             kerdes.HelyesValaszKod = 'A';
                         }else {
-                            Console.WriteLine("a.) "+kerdes.Valaszok[helytelen]+ "\nb.) "+ kerdes.Valaszok[helyes]);
+                            Console.WriteLine("A.) "+kerdes.Valaszok[helytelen]+ "\nB.) "+ kerdes.Valaszok[helyes]);
                             kerdes.HelyesValaszKod = 'B';
                         }
 
@@ -130,13 +129,13 @@ namespace MyApp
                             }
                         }
 
-                        Console.WriteLine("a.) "+ kerdes.Valaszok[0] +" " +per[0]+ "%\nb.) "+ kerdes.Valaszok[1] +" " +per[1]+ "%\nc.) "+ kerdes.Valaszok[2] +" " +per[2]+ "%\nd.) "+ kerdes.Valaszok[3] +" " +per[3]+ "%");
+                        Console.WriteLine("A.) "+ kerdes.Valaszok[0] +" " +per[0]+ "%\nB.) "+ kerdes.Valaszok[1] +" " +per[1]+ "%\nC.) "+ kerdes.Valaszok[2] +" " +per[2]+ "%\nD.) "+ kerdes.Valaszok[3] +" " +per[3]+ "%");
 
                         break;
                     case 3: //Telefon, de nagyon okos a barátod
                         
                         kerdes.Valaszok[helyes] += " <- Ez a helyes szerinte";
-                        Console.Write("a.) "+ kerdes.Valaszok[0] +"\nb.) "+ kerdes.Valaszok[1] +"\nc.) "+ kerdes.Valaszok[2] +"\nd.) "+ kerdes.Valaszok[3] +"\ns.) Segítség\nVálaszod: ");
+                        Console.Write("A.) "+ kerdes.Valaszok[0] +"\nB.) "+ kerdes.Valaszok[1] +"\nC.) "+ kerdes.Valaszok[2] +"\nD.) "+ kerdes.Valaszok[3] +"\nS.) Segítség\nVálaszod: ");
             
                         break;
                     default: // soha nem fog megtörténni
@@ -148,7 +147,11 @@ namespace MyApp
             }
 
             //System.Console.WriteLine(kerdes.HelyesValaszKod.ToLower() == ans.ToLower());
-            return kerdes.HelyesValaszKod.ToString().ToLower().ToCharArray()[0] == ans.ToLower().ToCharArray()[0]; // chief's kiss
+            bool ret = kerdes.HelyesValaszKod.ToString().ToLower().ToCharArray()[0] == ans.ToLower().ToCharArray()[0];
+            if (!ret) {
+                Console.WriteLine("A helyes válasz " +kerdes.HelyesValaszKod+ " volt.");
+            }
+            return ret;
         }
 
         static int Segitseg() {
@@ -170,12 +173,16 @@ namespace MyApp
         {
             Sorkerdes kerdes = SorKerdesek[random.Next(SorKerdesek.Count)];
 
-            Console.Write(kerdes.KerdesSzoveg +"\na.) "+ kerdes.Valaszok[0] +"\nb.) "+ kerdes.Valaszok[1] +"\nc.) "+ kerdes.Valaszok[2] +"\nd.) "+ kerdes.Valaszok[3] +"\nSorrendbe tett válaszod: ");
+            Console.Write(kerdes.KerdesSzoveg +"\nA.) "+ kerdes.Valaszok[0] +"\nB.) "+ kerdes.Valaszok[1] +"\nC.) "+ kerdes.Valaszok[2] +"\nD.) "+ kerdes.Valaszok[3] +"\nSorrendbe tett válaszod: ");
             //Console.Write(kerdes.HelyesValaszKod); //TODO
             string ans = Console.ReadLine();
 
             //System.Console.WriteLine(kerdes.HelyesValaszKod.ToLower() == ans.ToLower());
-            return kerdes.HelyesValaszKod.ToLower() == ans.ToLower();
+            bool ret = kerdes.HelyesValaszKod.ToLower() == ans.ToLower();
+            if (!ret) {
+                Console.WriteLine("A helyes válasz " +kerdes.HelyesValaszKod+ " volt.");
+            }
+            return ret;
         }
     }
 }
